@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8">
+        <title>
+            Coding Challenge #2 (MEDIUM)
+        </title>
+    </head>
+    <body>
+        <h1>Coding Challenge #2 (MEDIUM)</h1>
+        
+        <script>
+            "use strict";
+            var x2 = [1,2,5];                  // variable to hold the original value of the array. for display purpose in the the string only 
+            var x = [1,2,5];                  // array of numbers to be used
+            var y = 3;                       // variable to be pushed to the array
+            var pushX = x.push(y);          // creates a variable that pushes the value of "y" into array "x"
+            var sortX = x.sort();          // creates a variable that sorts the array after the value of "y" is pushed into "x"
+            
+            
+            // displays the sentence that is used in the example inside of the readme file 
+            document.write(y + " and "  + x2 + " returns a position of " + sortX.indexOf(y) + " because " + y + " is greater than " + sortX[sortX.indexOf(y)-1] + " (index " + (sortX.indexOf(y)-1) + ")" + " but less than " + (sortX[sortX.indexOf(y)+1]) + " (index " + (sortX.indexOf(y)+1) + ")");
+        
+        </script>
+    </body>
+</html>
